@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swathi N | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+body{
+background:#f5f7fb;
+color:#333;
+}
+header{
+background:#2563eb;
+color:white;
+padding:20px;
+text-align:center;
+position:sticky;
+top:0;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+section{
+padding:60px 10%;
+}
+.hero{
+text-align:center;
+padding:80px 10%;
+background:white;
+}
+.hero img{
+width:170px;
+height:170px;
+border-radius:50%;
+border:5px solid #2563eb;
+object-fit:cover;
+}
+.hero h1{
+margin-top:20px;
+font-size:40px;
+}
+.hero p{
+margin:15px;
+font-size:18px;
+}
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:15px;
+}
+h2{
+margin-bottom:20px;
+color:#2563eb;
+}
+.card{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+.skills span{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:10px 20px;
+margin:5px;
+border-radius:20px;
+}
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+button{
+padding:12px 30px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Swathi N</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<img src="https://via.placeholder.com/170" alt="Profile">
+<h1>Hello, I'm Swathi N</h1>
+<p>Python Developer | Web Developer | Computer Science Student</p>
+<a class="btn" href="#contact">Hire Me</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a Computer Science Engineering student passionate about Python,
+Web Development, Machine Learning and Full Stack Development.
+I enjoy building real-world projects and learning new technologies.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="card skills">
+<span>Python</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Bootstrap</span>
+<span>Flask</span>
+<span>MySQL</span>
+<span>Git</span>
+<span>GitHub</span>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Driver Drowsiness Detection</h3>
+<p>
+Developed an AI-based driver monitoring system using Python,
+OpenCV and CNN to detect eye closure and yawning.
+</p>
+</div>
+
+<div class="card">
+<h3>Weather Prediction</h3>
+<p>
+Built a machine learning model using Python and Scikit-Learn
+for weather forecasting.
+</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>
+Responsive portfolio website developed using HTML, CSS and JavaScript.
+</p>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="card">
+
+<form onsubmit="sendMessage(event)">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Swathi N | Portfolio Website</p>
+
+</footer>
+
+<script>
+
+function sendMessage(e){
+e.preventDefault();
+alert("Thank you! Your message has been submitted.");
+}
+
+</script>
+
+</body>
+</html>
